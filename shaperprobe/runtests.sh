@@ -7,5 +7,5 @@ if [ -z ${HOSTNAME} ] ; then
 fi
 
 BUILD_DIR=${BUILD_DIR:-$PWD}
-IP=`python -c 'import socket; print socket.gethostbyname('$HOSTNAME')'`
-$BUILD_DIR/prober -n ${IP} 
+IP=`python -c 'import socket; print socket.gethostbyname('${HOSTNAME}')'`
+$BUILD_DIR/prober -n ${IP}  > testrun.log
