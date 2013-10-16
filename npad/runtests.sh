@@ -8,4 +8,4 @@ fi
 
 BUILD_DIR=${BUILD_DIR:-$PWD}
 
-$BUILD_DIR/diag-client 
+$BUILD_DIR/diag-client ${HOSTNAME} 8001 100 1 > testrun.log
